@@ -45,10 +45,10 @@ minikube start --container-runtime=containerd
 
    _Note: If the helm install gives you trouble, try running the same command but replace "install" with "upgrade". More info on that to come._
 
-4. Install sample application
+## Install sample application
 
-   ```console
-   kubectl apply -f https://raw.githubusercontent.com/spinkube/spin-operator/main/config/samples/simple.yaml
-   kubectl port-forward services/simple-spinapp 8080:80
-   curl localhost:8080/hello
-   ```
+```console
+kubectl apply -f https://raw.githubusercontent.com/spinkube/spin-operator/main/config/samples/simple.yaml
+kubectl port-forward services/simple-spinapp 8080:80
+curl localhost:8080/hello
+```
