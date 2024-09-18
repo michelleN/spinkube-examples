@@ -20,7 +20,7 @@
      containers:
      - name: hello-world-container
        image: busybox
-       command: ['sh', '-c', 'echo "Hello, World!" && sleep 3600']
+       command: ['sh', '-c', 'while true; do echo "Hello, World!" && sleep 3600; done']
        ports:
        - containerPort: 8080
    ```
